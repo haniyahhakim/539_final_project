@@ -1,1 +1,391 @@
 
+body{
+    background-color: rgb(249, 240, 241);
+}
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+:focus {
+  outline: 3px solid #ff5fa2; /* visible pink outline */
+  outline-offset: 5px;
+}
+h1{
+    font-family: "Send Flowers", cursive;
+}
+
+p{
+  font-family: "Georgia", serif;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.active {
+    color: rgb(160, 0, 75);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border: lightgrey solid 2px;
+    border-radius: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 100px;
+}
+
+.header {
+  display: flex;
+  align-items: center;   /* keeps logo & nav aligned */
+  justify-content: space-between;
+  background-color: white;
+}
+
+.logo {
+  height: 200px;   /* adjust size */
+  width: auto; 
+  margin-top: -120px;
+  position: absolute;   /* prevents stretch */
+}
+
+.header .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 250px;
+    height: 150px;
+}
+
+nav li {
+           list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Send Flowers", cursive;
+}
+
+nav a {
+
+  text-decoration: none;
+  font-size: 30px;
+    text-decoration: none;
+    font-weight: lighter;
+    color: black;
+    font-family: "Send Flowers", cursive;
+}
+
+nav a:hover {
+    opacity: 0.6;
+    color: rgb(160, 0, 75);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.right{
+display:flex;
+align-items: flex-end;
+justify-content: space-evenly;
+gap: 30px;
+
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer {
+    padding-top: 100px ;
+    padding-bottom: 20px ;
+  text-align:center;
+}
+.footer a {
+    text-decoration: none;
+  color:black;
+  margin:0 5px 0 0;
+  font-size:15px;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+.footer img{
+    margin:0 7px 10px 0;
+    width: auto;
+    height: 20px;
+}
+.footer a:hover {
+  opacity:0.7;
+}
+
+.about img {
+    border: solid, pink, 5px;
+    border-radius: 50%;
+    margin-left: 42%;
+    margin-top: 30%;
+    position: relative;
+    height: 500px;
+    width: 400px;
+    box-shadow: 0 8px 20px rgba(222, 116, 116, 0.08);
+}
+
+.about .text h1 {
+    padding-right: 100px;
+    margin-left: 40%;
+    margin-top: 9%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    position: absolute;
+}
+
+.about p {
+    padding-right: 30px;
+    margin-left: 40%;
+    margin-top: 1%;
+    position: absolute;
+text-align: justify;
+    margin-right: 330px;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+    line-height: 21px;
+}
+
+.images {
+display: flex;
+    padding: 15px 15px 30px;
+    border-radius: 4px;
+    width: 260px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    
+}
+
+.images img {
+margin-top: 30px;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  border: solid, rgb(248, 244, 232), 40px;
+  background-color: rgb(248, 244, 232);
+  padding-bottom: 60px;
+  box-shadow: 0 4px 10px rgba(95, 95, 95, 0.15);
+}
+
+.images img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  z-index: 10; 
+
+}
+
+.spel {
+  top: 20px;
+  left: 50px;
+  transform: rotate(-8deg);
+  z-index: 2;
+}
+
+.sig {
+  top: 0px;
+  left: 260px;
+  transform: rotate(5deg);
+  z-index: 3; /* on top */
+}
+
+.ken {
+  top: 220px;
+  left: 150px;
+  transform: rotate(12deg);
+  z-index: 1;
+}
+
+
+.arrow {
+    display:flex;
+    border: none;
+    box-shadow: none;
+    justify-content: center;
+    position: absolute;
+margin-top: -50px;
+margin-left: 550px;
+}
+
+.arrow img{
+    width: 250px;
+    height: 250px;
+}
+
+.label{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.label h1 {
+    padding-right: 100px;
+    margin-left: 45%;
+    margin-top: -2%;
+    font-size: 50px;
+    font-weight: lighter;
+    position: absolute;
+    font-family: "Send Flowers", cursive;
+}
+
+.label p{
+    margin-left: 67%;
+    margin-top: 10%;
+    position: absolute;
+    margin-right: 50px;
+    font-family: "Georgia", serif;
+    line-height: 21px;
+}
+
+
+.connect{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.connect .umich {
+    height: 800px;
+    width: auto;
+}
+
+.connect h1{
+    padding-right: 100px;
+    margin-left: 20%;
+    margin-top: -20%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    position: absolute;
+}
+
+.spotify-player {
+display:flex;
+justify-content: flex-end;
+margin-top: -30%;
+margin-right: 14%;
+
+}
+
+
+.project1, .project2, .project3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.head {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: "Send Flowers", cursive;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.sub{
+margin-bottom: -90px;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.project2 .sub{
+margin-bottom: -40px;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.overview {
+    grid-column: 1 ;
+    margin-right: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+.project1 img, .project2 img, .project3 img{
+    gap: 100px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: pink solid 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.476);
+}
+
+.project1 img:hover, .project2 img:hover, .project3 img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.resume-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 30px;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #111;
+}
+
+.resume-header {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.resume-header h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.resume-header a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.resume-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.resume-container h2 {
+    font-size: 20px;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.resume-container ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.resume-container p {
+font-family: "Georgia", serif;
+}
+.job {
+    margin-bottom: 20px;
+}
+
