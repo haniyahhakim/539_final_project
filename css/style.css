@@ -255,36 +255,6 @@ margin-left: 550px;
 }
 
 
-.connect{
-display: flex;
-align-items: center;
-justify-content: flex-start;
-}
-
-.connect .umich {
-    height: 800px;
-    width: auto;
-}
-
-.connect h1{
-    padding-right: 100px;
-    margin-left: 20%;
-    margin-top: -20%;
-    text-align: center;
-    font-size: 50px;
-    font-weight: lighter;
-    position: absolute;
-}
-
-.spotify-player {
-display:flex;
-justify-content: flex-end;
-margin-top: -30%;
-margin-right: 14%;
-
-}
-
-
 .project1, .project2, .project3{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -445,21 +415,6 @@ font-family: "Georgia", serif;
     text-align: left;
   }
 
-  .connect {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .connect .umich {
-    height: 300px;
-    margin: 0 auto;
-  }
-
-  .connect h1 {
-    position: static;
-    margin: 20px 0;
-  }
-
   .project1, .project2, .project3 {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -584,21 +539,6 @@ font-family: "Georgia", serif;
     margin: 10px;
     padding: 20px;
     text-align: left;
-  }
-
-  .connect {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .connect .umich {
-    height: 300px;
-    margin: 0 auto;
-  }
-
-  .connect h1 {
-    position: static;
-    margin: 20px 0;
   }
 
   .project1, .project2, .project3 {
